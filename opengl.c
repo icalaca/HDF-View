@@ -4,8 +4,7 @@
 extern int sizeX, sizeY;
 
 // Imagem de entrada
-extern float* image;
-
+extern unsigned char* image;
 // Imagem de saida
 extern unsigned char* image8;
 
