@@ -1,5 +1,5 @@
-# HDR-View
-Visualizador de imagens HDR criado na disciplina de PBN (FACIN-PUCRS)
+# HDF-View
+Visualizador de imagens HDF criado na disciplina de PBN (FACIN-PUCRS)
 
 # Requisitos
 - GLU
@@ -7,10 +7,10 @@ Visualizador de imagens HDR criado na disciplina de PBN (FACIN-PUCRS)
 
 # GCC
 ```bash
-gcc main.c opengl.c -o hdr -lglut -lGL -lGLU -lm
+gcc main.c opengl.c -o hdf -lglut -lGL -lGLU -lm
 ```
 
 # Uso
 ```bash
-./hdr image.hdf
+./hdf image.hdf
 ```
