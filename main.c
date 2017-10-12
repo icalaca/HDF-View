@@ -81,10 +81,10 @@ void instructions(){
     printf("ESC - Sair\n\n");
 }
 
-////////////////////////////////////////////////////////////////////
-//Checa id no header para ver se trata-se de uma imagem HDR valida//
-////////////////////////////////////////////////////////////////////
-void checkHDR(unsigned char *img){
+/////////////////////////////////////////////////////////////
+//Checa id no header para ver se trata-se de um arquivo HDF//
+/////////////////////////////////////////////////////////////
+void checkHDF(unsigned char *img){
     if(strncmp((char *)img,"HDF",3) != 0){
         printf("Imagem invalida!\n");
         exit(1);
@@ -178,7 +178,7 @@ unsigned char* readImg(char *fName){
         exit(1);
     }
     printf("Checando imagem...\n");
-    checkHDR(img);
+    checkHDF(img);
     fclose(f);
     return img;
 }
